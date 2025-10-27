@@ -43,7 +43,7 @@ def test_fixed_axes_default_path_distance():
         ("1F1B1R1L", False, (0, 0)), # cancels out in fixed-axis mode
         ("3r2l", False, (1, 0)), # lowercase handling, strafing
         ("1F2R2R1F4B", True, (2, 2)), # complex turn-then-move
-        ("1F2R2R1F4B", False, (4, -2)) # complex turn-then-move
+        ("1F2R2R1F4B", False, (4, -2)) # then compare fixed-axes to above
     ],
 )
 def test_endpoints_match_expected(path, turn_then_move, expected_end):
