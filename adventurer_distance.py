@@ -104,12 +104,14 @@ def main():
 
     # Output results.
     print("Adventurer Journey")
-    print(f'Using {"fixed-axes" if args.fixed_axes else "turn-then-move"} model.')
+    print(f"Path: {input_path}")
+    print(f'Model: {"fixed-axes" if args.fixed_axes else "turn-then-move"}')
     if args.verbose:        
         print("Coords:")
         for i, (x, y, direction) in enumerate(coords):
             print(f"({x}, {y}) direction={direction}")
-    print(f"End Coords: {coords[-1]}  Distance: {distance}")
+    print(f"End Coords & Direction: {coords[-1]}")
+    print(f"Distance: {distance}")
 
 if __name__ == '__main__':
     main()
